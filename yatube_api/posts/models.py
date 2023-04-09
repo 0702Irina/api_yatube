@@ -23,7 +23,7 @@ class Post(models.Model):
     )
     image = models.ImageField(
         upload_to='posts/', null=True, blank=True
-    )  # поле для картинки
+    )
     group = models.ForeignKey(
         Group, on_delete=models.SET_NULL,
         related_name='posts', blank=True, null=True
