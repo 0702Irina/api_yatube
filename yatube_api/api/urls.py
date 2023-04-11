@@ -1,7 +1,7 @@
 from rest_framework import routers
 from rest_framework.authtoken import views
 from django.urls import include, path
-from .views import CommentViewSet, GroupViewSet, PostViewSet
+from api.views import CommentViewSet, GroupViewSet, PostViewSet
 
 router_v1 = routers.DefaultRouter()
 router_v1.register('posts',
